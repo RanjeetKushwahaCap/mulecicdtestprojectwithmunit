@@ -21,7 +21,7 @@
 			<flow-ref doc:name="Flow-ref to mulecicdtestprojectwithmunitFlow" doc:id="8de6d8e7-bfb3-483a-8a3d-f4301ea5a6f2" name="mulecicdtestprojectwithmunitFlow"/>
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="e7520c8b-2aea-408a-9c90-137efb3ac6b6"  expression="#[payload]" is="#[MunitTools::equalToIgnoringCase('TEST123')]" message="The message passed was not Hello World"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="e7520c8b-2aea-408a-9c90-137efb3ac6b6"  expression="#[payload]" is="#[MunitTools::notNullValue()]" message="The message passed was not Hello World"/>
 		</munit:validation>
 	</munit:test>
 
